@@ -53,7 +53,7 @@ function init() {
     var found = false;
 
     msg.addEventListener('end', function () {
-      images[0].src = "../assets/images/smiling.png"
+      images[0].src = "./assets/images/smiling.png"
     })
     for (var i = 0; i < voices.length; i++) {
       var tempStr = voices[i].voiceURI + " (" + voices[i].lang + ")";
@@ -63,7 +63,7 @@ function init() {
       }
     }
     if (found){
-      images[0].src = '../assets/images/smiling-open.png';
+      images[0].src = './assets/images/smiling-open.png';
       speechSynthesis.speak(msg);
     }
   })
